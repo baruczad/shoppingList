@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Shopping list</title>
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Item to be added" class="addNewItem" onkeydown = "if (event.keyCode == 13)
+        document.querySelector('.submitButton').click()"    >
+        <button onclick="addItem()" class="submitButton" >Add to list</button>
+        <button class="deleteButton" onclick="deleteAll()">Delete all items</button>
+
+        <div class="listcontainer">
+            <ul class="list"></ul>
+        </div>
+    </div>
+</body>
+
+</html>

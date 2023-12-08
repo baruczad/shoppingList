@@ -1,0 +1,134 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: no-repeat;
+    background: cover;
+    background-image: linear-gradient(to right bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-attachment: fixed;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.container {
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    overflow-y: auto;
+    background-image: linear-gradient( yellowgreen, aquamarine);
+    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+    border-width: 7px;
+    border-style: solid;
+}
+.listcontainer, .list{
+    max-height: 500px;
+}
+.addNewItem,
+.submitButton,
+.deleteButton {
+    background: #fdb44b;
+    border: none;
+    height: 25px;
+    border-radius: 8px;
+}
+
+.addNewItem {
+    width: 30vw;
+    max-width: 250px;
+}
+
+.submitButton {
+    width: 100px;
+    cursor: pointer;
+
+}
+
+.submitButton:hover,
+.deleteButton:hover {
+    scale: 1.045;
+    transition-duration: 0.15s;
+}
+
+.itemBought {
+    transition-duration: 0.3s;
+    color: rgb(9, 138, 16);
+    margin-left: auto;
+    margin-right: 5px;
+    border: 2px solid rgb(5, 128, 5);
+}
+
+.itemBought:hover {
+    background-color: rgb(5, 128, 5);
+    color: white;
+
+}
+
+.itemMistake {
+    transition-duration: 0.3s;
+    color: red;
+    border: 2px solid red;
+}
+
+.itemMistake:hover {
+    background-color: red;
+    color: white;
+
+}
+
+.itemBought,
+.itemMistake {
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    background: whitesmoke;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+
+
+}
+
+.itemBought:hover,
+.itemMistake:hover {
+    border-radius: 15px;
+    transition-duration: 0.5s;
+
+
+}
+
+.itemBought:active {
+    background-color: rgb(5, 128, 5);
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.itemMistake:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+li {
+    transition: 0.5s;
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.done {
+    color: rgb(88, 88, 88);
+    font-size: smaller;
+}
+
+.deleteButton {
+    cursor: pointer;
+}
+
+.items--delete {
+    transform: translateX(20px);
+    opacity: 0;
+}
