@@ -20,9 +20,11 @@ body {
     margin-top: 100px;
     overflow-y: auto;
     background-image: linear-gradient( yellowgreen, aquamarine);
-    border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
-    border-width: 7px;
-    border-style: solid;
+    background: linear-gradient(90deg, hsla(10, 82%, 65%, 1) 0%, hsla(290, 79%, 13%, 1) 100%);
+    border-width: 6px;
+    border-style:solid;
+    border-radius: 6%;
+    
 }
 .listcontainer, .list{
     max-height: 500px;
